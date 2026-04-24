@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "llm-prompt-injection-tester"
+version = "0.1.0"
+description = "A configurable framework for testing LLM applications against prompt injection attacks."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+  { name = "OpenAI Codex" }
+]
+dependencies = ["openai>=1.0.0", "google-genai>=1.0.0"]
+
+[project.scripts]
+pi-tester = "pi_tester.cli:main"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
