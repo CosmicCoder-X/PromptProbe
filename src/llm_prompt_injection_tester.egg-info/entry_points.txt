@@ -1,0 +1,2 @@
+[console_scripts]
+pi-tester = pi_tester.cli:main
