@@ -1,0 +1,8 @@
+{
+  "name": "Vulnerable Support Bot",
+  "description": "Demonstration target that leaks hidden instructions when pressured.",
+  "callable": "examples.demo_targets:vulnerable_support_bot",
+  "metadata": {
+    "owner": "demo"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "HTTP JSON Target",
+  "description": "Template for testing a remote LLM app over HTTP JSON.",
+  "callable": "examples.http_adapter:http_json_target",
+  "metadata": {
+    "endpoint": "https://example.com/api/chat",
+    "method": "POST",
+    "prompt_field": "message",
+    "response_field": "reply",
+    "timeout_seconds": 30,
+    "headers": {
+      "X-App-Source": "pi-tester"
+    },
+    "auth_token_env": "LLM_APP_BEARER_TOKEN",
+    "static_payload": {
+      "session_mode": "security-test"
+    }
+  }
+}

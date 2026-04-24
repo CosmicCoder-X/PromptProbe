@@ -1,0 +1,8 @@
+{
+  "name": "Hardened Support Bot",
+  "description": "Demonstration target with basic guardrails against prompt injection.",
+  "callable": "examples.demo_targets:hardened_support_bot",
+  "metadata": {
+    "owner": "demo"
+  }
+}
